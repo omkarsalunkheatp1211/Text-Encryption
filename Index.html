@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Text Encryption</title>
+    <link rel="icon" type="images/x-icon" href="icon.ico" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Text Encryption</h1>
+        <div class="input-section">
+            <label for="key">Enter Encryption Key:</label>
+            <input type="text" id="key" class="input-field" required>
+            <label for="plaintext">Enter Text to Encrypt:</label>
+            <textarea id="plaintext" class="input-field" required></textarea>
+            <div class="button-container">
+                <button id="encryptBtn" class="action-btn">Encrypt</button>
+                <button id="decryptBtn" class="action-btn">Decrypt</button>
+            </div>
+        </div>
+        <div class="output-section">
+            <label for="output">Output:</label>
+            <div class="output-container">
+                <textarea id="output" class="output-field" readonly required></textarea>
+                <button id="copyBtn" class="copy-btn">Copy</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2023 <a href="https://github.com/omkarsalunkheatp1211" target="_blank">Omkar Salunkhe</a></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
